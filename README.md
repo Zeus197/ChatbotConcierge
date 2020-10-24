@@ -9,18 +9,20 @@ AWS services based Dining Recommendation System
 # Architecture
 
 ![architecture](https://github.com/sailikhithk/ChatbotConcierge/blob/main/architecture.png)
-Dining Concierge Chat App
+
+**Dining Concierge Chat App**
 
 Name: Ishan Tickoo, Sai Likhith Kanuparthi
 NetID: it732, slk522
-S3 Bucket link: 
-GitHub Release: 
 
-Overview:
+**S3 Bucket link:** 
+**GitHub Release:** 
+
+**Overview:**
 
 Here we implement a serverless, microservice driven web application using AWS cloud Services. The chatbot provides recommendations for restaurants in the Manhattan area based on the cuisine type and various other factors like time, date etc. We have collected our data using the YELP-API.
 
-Services Used:
+**Services Used:**
 
 1.	Amazon S3 - To host the frontend of our web application in an S3 bucket
 2.	Amazon Lex - To create the bot and train it
@@ -33,61 +35,7 @@ Services Used:
 9.	Yelp API - To get suggestions for food
 10.	AWS Cognito - For user authentication
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Architecture Diagram:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-Steps:
+**Steps:**
 
 1.	Build and Deploy the Frontend application:
 a.	We need to implement an interactive chat interface in which a user can write text and get a reply back. We have used open source frameworks and libraries that can work for our UI. link
