@@ -2,11 +2,11 @@
 
 AWS services based Dining Recommendation System
 
-![Demo](https://github.com/sailikhithk/ChatbotConcierge/demo.png)
+![Demo](https://github.com/sailikhithk/ChatbotConcierge/blob/main/demo.png)
 
 # Architecture
 
-![architecture](https://github.com/sailikhithk/ChatbotConcierge/architecture.png)
+![architecture](https://github.com/sailikhithk/ChatbotConcierge/blob/main/architecture.png)
 Dining Concierge Chat App
 
 Name: Ishan Tickoo, Sai Likhith Kanuparthi
