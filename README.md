@@ -44,14 +44,14 @@ i.	Set up bucket for hosting. link
 2.	Build the API for the application
 a.	Use API Gateway to setup your API 
 i.	 Use the following API/Swagger specification for your API 
-● swagger
-● Use swagger editor to visualize this file 
-● You can import the Swagger file into API Gateway 
-○ AWS API Gateway developer Guide
-● Create a Lambda function (LF0) that performs the chat operation 1/7 
-○ Use the request/response model (interfaces) specified in the API specification above 
+*  swagger
+* Use swagger editor to visualize this file 
+* You can import the Swagger file into API Gateway 
+* AWS API Gateway developer Guide
+* Create a Lambda function (LF0) that performs the chat operation 1/7 
+* Use the request/response model (interfaces) specified in the API specification above 
 ii. For now, just implement a boilerplate response to all messages: 
-● ex. User says anything, Bot responds: "I’m still under development. Please come back later."
+* ex. User says anything, Bot responds: "I’m still under development. Please come back later."
 b.	Enable CORS on your API methods link
 c.	Generate an SDK for your API link link
 3. Build a Dining Concierge chatbot using Amazon Lex.
