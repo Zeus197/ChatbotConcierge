@@ -53,10 +53,8 @@ Here we implement a serverless, microservice driven web application using AWS cl
 * Use the request/response model (interfaces) specified in the API specification above 
 ii. For now, just implement a boilerplate response to all messages: 
 * ex. User says anything, Bot responds: "I’m still under development. Please come back later."
- ##### b.	
- Enable CORS on your API methods link
-##### c.	
-Generate an SDK for your API link link
+ ##### b.	 Enable CORS on your API methods link
+##### c. Generate an SDK for your API link link
 ### 3. Build a Dining Concierge chatbot using Amazon Lex.
 ##### a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
 ##### b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
@@ -110,7 +108,7 @@ Generate an SDK for your API link link
         •	formats them and sends them over text message to the phone number included in the SQS message, using SNS (https://docs.aws.amazon.com/sns/latest/dg/SMSMessages.html).
         •	Use the DynamoDB table “yelp-restaurants” (which you created from Step 1) to fetch more information about the restaurants (restaurant name, address, etc.), since the restaurants stored in Elasticsearch will have only a small subset of fields from each restaurant. 
         •	Modify the rest of the LF2 function if necessary to send the user text/email.
-    b.	Set up a CloudWatch event trigger that runs every minute and invokes the Lambda function as a result: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLabdaSchedule.html. This automates the queue worker Lambda to poll and process suggestion requests on its own.
+     b.	Set up a CloudWatch event trigger that runs every minute and invokes the Lambda function as a result: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLabdaSchedule.html. This automates the queue worker Lambda to poll and process suggestion requests on its own.
 
 
 
