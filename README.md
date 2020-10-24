@@ -2,7 +2,7 @@
 
 AWS services based Dining Recommendation System
 
-![Demo](https://github.com/sailikhithk/ChatbotConcierge/blob/main/demo.png)
+![Demo](https://github.com/sailikhithk/ChatbotConcierge/blob/main/ChatbotConcierge.png)
 
 # Architecture
 
