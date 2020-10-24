@@ -38,23 +38,22 @@ Here we implement a serverless, microservice driven web application using AWS cl
 **Steps:**
 
 ### 1.	Build and Deploy the Frontend application:
-##### a.We need to implement an interactive chat interface in which a user can write text and get a reply back. We have used open source frameworks and libraries that can work for our UI. link
-   ##### b.	We need to host the frontend in S3 bucket.
-   ###### i.  Set up bucket for hosting. link
+      ##### a.We need to implement an interactive chat interface in which a user can write text and get a reply back. We have used open source frameworks and libraries that can work for our UI. link
+      ##### b.	We need to host the frontend in S3 bucket.
+            ###### i.  Set up bucket for hosting. link
 ### 2.	Build the API for the application
-##### a.	Use API Gateway to setup your API 
-   ###### i.	 Use the following API/Swagger specification for your API 
+      ##### a.	Use API Gateway to setup your API 
+         ###### i.	 Use the following API/Swagger specification for your API 
 
-### swagger
-* Use swagger editor to visualize this file 
-* You can import the Swagger file into API Gateway 
-* AWS API Gateway developer Guide
-* Create a Lambda function (LF0) that performs the chat operation 1/7 
-* Use the request/response model (interfaces) specified in the API specification above 
-ii. For now, just implement a boilerplate response to all messages: 
-* ex. User says anything, Bot responds: "I’m still under development. Please come back later."
- ##### b.	 Enable CORS on your API methods link
-##### c. Generate an SDK for your API link link
+                     ### swagger-  Use swagger editor to visualize this file 
+                     * You can import the Swagger file into API Gateway 
+                     * AWS API Gateway developer Guide
+                     * Create a Lambda function (LF0) that performs the chat operation 1/7 
+                     * Use the request/response model (interfaces) specified in the API specification above 
+               ii. For now, just implement a boilerplate response to all messages: 
+                     * ex. User says anything, Bot responds: "I’m still under development. Please come back later."
+      ##### b.	 Enable CORS on your API methods link
+   ##### c. Generate an SDK for your API link link
 ### 3. Build a Dining Concierge chatbot using Amazon Lex.
 ##### a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
 ##### b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
