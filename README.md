@@ -55,9 +55,9 @@ Here we implement a serverless, microservice driven web application using AWS cl
        b.	 Enable CORS on your API methods link
        c. Generate an SDK for your API link link
 ### 3. Build a Dining Concierge chatbot using Amazon Lex.
-##### a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
-##### b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
-##### c. Bot requirements:
+     ##### a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
+     ##### b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
+    ##### c. Bot requirements:
         i.  Implement at least the following three intents:
             •	GreetingIntent
             •	ThankYouIntent
