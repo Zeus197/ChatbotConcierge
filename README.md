@@ -38,15 +38,12 @@ Here we implement a serverless, microservice driven web application using AWS cl
 **Steps:**
 
 ### 1.	Build and Deploy the Frontend application:
-    ##### a.	
-    We need to implement an interactive chat interface in which a user can write text and get a reply back. We have used open source frameworks and libraries that can work for our UI. link
-    ##### b.	
-    We need to host the frontend in S3 bucket.
-    ###### i.	
-        Set up bucket for hosting. link
+##### a.We need to implement an interactive chat interface in which a user can write text and get a reply back. We have used open source frameworks and libraries that can work for our UI. link
+   ##### b.	We need to host the frontend in S3 bucket.
+   ###### i.  Set up bucket for hosting. link
 ### 2.	Build the API for the application
-    ##### a.	Use API Gateway to setup your API 
-    ###### i.	 Use the following API/Swagger specification for your API 
+##### a.	Use API Gateway to setup your API 
+   ###### i.	 Use the following API/Swagger specification for your API 
 
 ### swagger
 * Use swagger editor to visualize this file 
