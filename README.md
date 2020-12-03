@@ -45,7 +45,7 @@ Here we implement a serverless, microservice driven web application using AWS cl
        a.	Use API Gateway to setup your API 
           i.	 Use the following API/Swagger specification for your API 
 
-                     ### swagger-  Use swagger editor to visualize this file 
+                   swagger-  Use swagger editor to visualize this file 
                      * You can import the Swagger file into API Gateway 
                      * AWS API Gateway developer Guide
                      * Create a Lambda function (LF0) that performs the chat operation 1/7 
@@ -55,9 +55,9 @@ Here we implement a serverless, microservice driven web application using AWS cl
        b.	 Enable CORS on your API methods link
        c. Generate an SDK for your API link link
 ### 3. Build a Dining Concierge chatbot using Amazon Lex.
-     ##### a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
-     ##### b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
-    ##### c. Bot requirements:
+       a. Create a new bot using the Amazon Lex service. Read up the documentation on all things Lex, for   more information: https://docs.aws.amazon.com/lex/latest/dg/getting-started.html
+       b. Create a Lambda function (LF1) and use it as a code hook for Lex, which essentially entails the invocation of your Lambda before Lex responds to any of your requests -- this gives you the chance to manipulate and validate parameters as well as format the bot’s responses. More documentation on Lambda code hooks at the following link: https://docs.aws.amazon.com/lex/latest/dg/using-lambda.html
+       c. Bot requirements:
         i.  Implement at least the following three intents:
             •	GreetingIntent
             •	ThankYouIntent
@@ -77,24 +77,24 @@ Here we implement a serverless, microservice driven web application using AWS cl
      iv. Based on the parameters collected from the user, push the information collected from the user (location, cuisine, etc.) to an SQS queue (Q1). More on SQS queues here: link
             Also confirm to the user that you received their request and that you will notify them over SMS once you have the list of restaurant suggestions.
 ### 4. Integrate the Lex chatbot into your chat API
-##### a. Use the AWS SDK to call your Lex chatbot from the API Lambda (LF0).
-##### b. When the API receives a request, you should 
+       a. Use the AWS SDK to call your Lex chatbot from the API Lambda (LF0).
+       b. When the API receives a request, you should 
         •	extract the text message from the API request, 
         •	send it to your Lex chatbot, 
         •	wait for the response, 
         •	send back the response from Lex as the API response.
 ### 5. Use the Yelp API to collect 5,000+ random restaurants from Manhattan.
-##### i. Yelp API
+      i. Yelp API
         •	Get restaurants by your self-defined cuisine types
         •	You can do this by adding cuisine type in the search term ( ex. Term: chinese restaurants)
         •	Each cuisine type should have 1,000 restaurants or so.
         •	Make sure your restaurants don’t duplicate.
-##### ii. DynamoDB (a noSQL database)
+      ii. DynamoDB (a noSQL database)
         •	Create a DynamoDB table and named “yelp-restaurants”
         •	Store the restaurants you scrape, in DynamoDB (one thing you will notice is that some restaurants might have more or ess fields than others, which makes DynamoDB ideal for storing this data)
         •	With each item you store, make sure to attach a key to the object named “insertedAtTimestamp” with the value of the time and date of when you inserted the particular record 
         •	Store those that are necessary for your recommendation.(Requirements: Business ID, Name, Address, Coordinates, Number of Reviews, Rating, Zip Code)
-##### iii. Note: you can perform this scraping from your computer or from your AWS account -- your pick.
+      iii. Note: you can perform this scraping from your computer or from your AWS account -- your pick.
 ### 6.	Create an ElasticSearch instance using the AWS ElasticSearch Service.
         o	Create an ElasticSearch index called “restaurants”
         o	Create an ElasticSearch type under the index “restaurants” called “Restaurant”
